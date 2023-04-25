@@ -29,6 +29,10 @@
   color: #4dbf00;
 }
 
+.logo:hover {
+  color: #60d513;
+}
+
 /* Menu */
 .menu__container {
   flex: 6;
@@ -42,6 +46,11 @@
 
 .menu__list-item {
   margin-right: 30px;
+  cursor: pointer;
+}
+
+.menu__list-item:hover {
+  transform: scale(1.1);
 }
 
 .menu__list-item.active {
@@ -95,4 +104,45 @@
 
 .sidebar .icon:hover {
   transform: scale(1.1);
+}
+
+/* ---- CONTENT ----- */
+.container {
+  min-height: calc(100vh - 50px);
+  background-color: #151515;
+  color: white;
+}
+
+.content__container {
+  margin-left: 50px;
+}
+
+.hero__content {
+  height: 50vh;
+  padding: 50px;
+}
+
+.hero__img {
+  width: 200px;
+}
+
+.hero__desc {
+  width: 500px;
+  margin: 30px 0;
+  color: lightgray;
+}
+
+.hero__button {
+  padding: 10px 20px;
+  background-color: #4dbf00;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  background-color: #60d513;
 }

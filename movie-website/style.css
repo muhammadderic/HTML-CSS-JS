@@ -275,3 +275,35 @@
 .arrow:hover {
   opacity: 1;
 }
+
+/* Active Mode */
+.container.active {
+  background-color: white;
+}
+
+.movie-list__title.active {
+  color: black;
+}
+
+.header.active {
+  background-color: white;
+
+  color: black;
+}
+
+.sidebar.active {
+  background-color: white;
+}
+
+.sidebar__icon.active {
+  stroke: black;
+}
+
+.toggle.active {
+  background-color: black;
+}
+
+.toggle-ball.active {
+  background-color: white;
+  transform: translateX(-20px);
+}

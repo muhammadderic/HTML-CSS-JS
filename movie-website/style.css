@@ -117,8 +117,8 @@
   margin-left: 50px;
 }
 
+/* Hero */
 .hero__content {
-  height: 50vh;
   padding: 50px;
 }
 
@@ -145,4 +145,100 @@
 
 .hero__button:hover {
   background-color: #60d513;
+}
+
+/* Film */
+.movie-list__container {
+  padding: 0 20px;
+}
+
+.movie-list__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-list {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.movie-list__item {
+  margin-right: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.movie-list__item:hover .movie-list__item__img {
+  transform: scale(1.1);
+  margin: 0 20px;
+  opacity: 0.5;
+}
+
+/* .movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+} */
+
+.movie-list__item__img {
+  height: 200px;
+  width: 270px;
+  border-radius: 20px;
+  transition: all 1s ease-in-out;
+  object-fit: cover;
+}
+
+.movie-list__item__title {
+  padding: 0 10px;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: #333;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list__item__desc {
+  width: 230px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #333;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list__item__button {
+  padding: 10px;
+  background-color: #4dbf00;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.arrow {
+  position: absolute;
+  top: 130px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  opacity: 1;
 }

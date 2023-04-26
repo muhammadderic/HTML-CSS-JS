@@ -82,6 +82,34 @@
   object-fit: cover;
 }
 
+/* Dark Light Mode */
+.toggle {
+  width: 46px;
+  height: 25px;
+  margin-left: 1rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 30px;
+  position: relative;
+}
+
+.toggle .icon {
+  color: goldenrod;
+}
+
+.toggle-ball {
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  position: absolute;
+  right: 0px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s ease all;
+}
+
 /* ----- SIDEBAR ----- */
 .sidebar {
   height: 100%;

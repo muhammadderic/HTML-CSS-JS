@@ -205,11 +205,16 @@
   opacity: 0.5;
 }
 
-/* .movie-list-item:hover .movie-list-item-title,
-.movie-list-item:hover .movie-list-item-desc,
-.movie-list-item:hover .movie-list-item-button {
+.movie-list__item:hover .movie-list__item__title,
+.movie-list__item:hover .movie-list__item__desc,
+.movie-list__item:hover .movie-list__item__button {
   opacity: 1;
-} */
+}
+
+.movie-list__item__button:hover {
+  background-color: #60d513;
+  transition: .1s all ease-in-out;
+}
 
 .movie-list__item__img {
   height: 200px;
